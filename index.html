@@ -141,9 +141,6 @@
             </div>
         </div>
     </div>
-    <div>
-        <img src="/ZeroForge/docs/assets/block_diagram_zeroconv.png" alt="Block Diagram">
-    </div>
     <hr class="divider" />
     <div class="container" style="max-width: 768px;">
         <div class="row">
@@ -227,20 +224,14 @@
         </div>
     </div>
     <hr class="divider" />
-    <div class="container meshes" id="meshContainer" style="max-width: 768px;">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Mesh exports</h2>
-                <p>Our generated NeRF models can be exported to meshes using the marching cubes algorithm for easy integration into 3D renderers or modeling software.</p>
-            </div>
-        </div>
-    </div>
-    <hr class="divider" />
     <div class="container" style="max-width: 768px;">
+        <div>
+            <img src="/ZeroForge/docs/assets/block_diagram_zeroconv.png" alt="Block Diagram">
+        </div>    
         <div class="row">
             <div class="col-md-12">
-                <h2>How does DreamFusion work?</h2>
-                <p>Given a caption, DreamFusion uses a text-to-image generative model called Imagen to optimize a 3D scene. We propose <strong>Score Distillation Sampling (SDS)</strong>, a way to generate samples from a diffusion model by optimizing a loss function. SDS allows us to optimize samples in an arbitrary parameter space, such as a 3D space, as long as we can map back to images differentiably. We use a 3D scene parameterization similar to Neural Radiance Fields, or NeRFs, to define this differentiable mapping. SDS alone produces reasonable scene appearance, but DreamFusion adds additional regularizers and optimization strategies to improve geometry. The resulting trained NeRFs are coherent, with high-quality normals, surface geometry and depth, and are relightable with a Lambertian shading model.</p>
+                <h2>How does ZeroForge work?</h2>
+                <p>[Insert explanation here]</p>
             </div>
         </div>
         <div class="row">
