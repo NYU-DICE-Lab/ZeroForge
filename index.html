@@ -171,8 +171,13 @@
             </div>
         <div class="row">
                 <div class="col-md-12">
-                    <p>[Insert explanation here]</p>
-                    
+                    <p>Our method begins by taking a [CLIP-Forge](https://github.com/AutodeskAILab/Clip-Forge) architecture which has been pre-trained on the ShapeNet dataset. To introduce novel concepts that we don't
+                         have 3D data for, we formulate a training loss that encourages high similarity between the generator's text input and image renderings of the generator's 3D output. This similarity score can be computed
+                        as an inner product in CLIP space by using CLIP's frozen image and text encoders. By using a differentiable rendering, we are able to use this metric as a training signal to update CLIP-Forge's weights and expand its generative capabilities.</p>
+                    <p>In addition to this, we also find that there are several other measures which must be taken to achieve good results. To prevent mode collapse, we add an additional contrastive penalty to maintain diversity in outputs across different text queries.
+                        One issue that can arise is the forgetting of the original shapes when training on new prompts outside ShapeNet. We address this by augmenting the CLIP-Forge decoder with a locked copy of the original parameters to allow rapid adaptation while 
+                        preserving existing concepts.
+                    </p>
                 </div>
         </div>
     
