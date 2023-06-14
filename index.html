@@ -42,16 +42,37 @@
 
     <script src="assets/js/video_comparison.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer@2.0.1/dist/model-viewer.min.js"></script>
+    <style>
+        .gif-banner {
+          display: flex; /* Use flexbox to align items horizontally */
+          justify-content: space-between; /* Distribute items evenly */
+          width: 100%; /* Occupy the entire width of the container */
+        }
+        
+        .gif-banner img {
+          max-width: 100%; /* Ensure GIFs don't exceed the container width */
+        }
+      </style>
+    
 </head>
 
 <body>
+    <!-- <div class="banner">
+      <img src="/ZeroForge/docs/assets/videos/gifs/tree.gif">
+      <img src="/ZeroForge/docs/assets/videos/gifs/knife.gif">
+      <img src="/ZeroForge/docs/assets/videos/gifs/spoon.gif">
+      <img src="/ZeroForge/docs/assets/videos/gifs/wineglass.gif">
+      <img src="/ZeroForge/docs/assets/videos/gifs/umbrella.gif">
+    </div> -->
     <div class="banner">
-      <video class="video lazy"
-          poster="https://dreamfusion-cdn.ajayj.com/sept28/banner_1x6_customhue_A.jpg"
-          autoplay loop playsinline muted>
-        <source data-src="https://dreamfusion-cdn.ajayj.com/sept28/banner_1x6_customhue_A.mp4" type="video/mp4"></source>
-      </video>
-    </div>
+        <div class="gif-banner">
+            <img src="/ZeroForge/docs/assets/videos/gifs/tree.gif">
+            <img src="/ZeroForge/docs/assets/videos/gifs/knife.gif">
+            <img src="/ZeroForge/docs/assets/videos/gifs/spoon.gif">
+            <img src="/ZeroForge/docs/assets/videos/gifs/wineglass.gif">
+            <img src="/ZeroForge/docs/assets/videos/gifs/umbrella.gif">
+        </div>
+    </div>    
     <div class="highlight-clean" style="padding-bottom: 10px;">
         <div class="container" style="max-width: 768px;">
             <h1 class="text-center"><b>ZeroForge</b>: Feedforward Text-to-Shape Without 3D Supervision</h1>
