@@ -43,26 +43,28 @@
     <script src="assets/js/video_comparison.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer@2.0.1/dist/model-viewer.min.js"></script>
     <style>
-        .banner {
-          display: flex;
-          justify-content: center; /* Center the banner horizontally */
+        body {
+        display: flex;
+        justify-content: center; /* Center the banner horizontally */
         }
 
         .gif-banner {
-          display: flex;
-          justify-content: space-between;
-          max-width: 100%; /* Limit the width of the banner */
-          margin: 0 auto; /* Center the banner horizontally */
+        display: flex; /* Use flexbox to align items horizontally */
+        align-items: center; /* Center the GIFs vertically */
+        gap: -5px; /* Remove the whitespace between GIFs */
         }
-    
-        .gif-banner img {
-          flex-shrink: 0;
-          width: auto;
-          height: 170px;
-          margin-right: -5px;
-        }
-      </style>
         
+        .gif-banner img {
+        flex-shrink: 0; /* Prevent the GIFs from shrinking further */
+        width: auto; /* Allow the GIFs to scale proportionally */
+        height: 160px; /* Adjust the height as needed */
+        }
+
+        .gif-caption {
+        text-align: center;
+        margin-top: 5px; /* Adjust the spacing between the GIF and the caption */
+        }
+    </style>
 </head>
 
 <body>
@@ -134,6 +136,26 @@
             <img src="/ZeroForge/docs/assets/videos/gifs/wineglass.gif">
             <img src="/ZeroForge/docs/assets/videos/gifs/umbrella.gif">
         </div>
+        <div class="gif-banner">
+            <div>
+              <img src="/ZeroForge/docs/assets/videos/gifs/knife.gif" alt="GIF 1">
+              <div class="gif-caption">Title 1</div>
+            </div>
+            <div>
+              <img src="/ZeroForge/docs/assets/videos/gifs/spoon.gif" alt="GIF 2">
+              <div class="gif-caption">Title 2</div>
+            </div>
+            <div>
+              <img src="/ZeroForge/docs/assets/videos/gifs/wineglass.gif" alt="GIF 3">
+              <div class="gif-caption">Title 3</div>
+            </div>
+            <div>
+                <img src="ZeroForge/docs/assets/videos/gifs/umbrella.gif" alt="GIF 3">
+                <div class="gif-caption">Title 3</div>
+              </div>
+  
+          </div>
+      
     </div>    
     <hr class="divider" />
     <div class="container" style="max-width: 768px;">
